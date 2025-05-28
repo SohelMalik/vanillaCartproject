@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VanillaCart - Your Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">VanillaCart</a>
+      <button id="dark-mode-toggle" class="btn">🌓 Dark Mode</button>
+      <a href="index.html" class="btn btn-primary">Back to Shop</a>
+    </div>
+    
+  </nav>
+
+  <main class="container cart-container">
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <h2>Total: $<span id="cart-total">0.00</span></h2>
+      <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+      <button id="checkout-btn" class="btn btn-success">Checkout</button>
+      
+    </div>
+
+  </main>
+
+  <!-- Simulated Payment Modal -->
+  <div id="checkout-popup" class="checkout-popup" style="display:none;">
+    <div class="checkout-popup-content">
+      <h2>Confirm Checkout</h2>
+      <p>Total Amount: $<span id="checkout-total"></span></p>
+      <button class="btn btn-primary" id="confirm-payment-btn">Confirm Payment</button>
+      <button class="btn btn-danger" id="cancel-payment-btn">Cancel</button>
+    </div>
+  </div>
+  
+
+  <script src="js/cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

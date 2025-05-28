@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VanillaCart - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">🛒 VanillaCart</h1>
+      
+      <div class="filter-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <div class="filter-buttons">
+          <button class="filter-btn" data-category="all">All</button>
+          <button class="filter-btn" data-category="smartphones">Smartphones</button>
+          <button class="filter-btn" data-category="laptops">Laptops</button>
+          <button class="filter-btn" data-category="fragrances">Fragrances</button>
+        </div>
+
+        <!-- Dark Mode Toggle Switch -->
+<!-- <label class="dark-mode-toggle">
+  <input type="checkbox" id="dark-mode-checkbox" />
+  <span>Dark Mode</span>
+</label> -->
+<button id="dark-mode-toggle" class="btn">🌓 Dark Mode</button>
+
+
+
+  <a href="cart.html" class="cart-link">
+  <i class="fas fa-shopping-bag"></i>
+  <span>Cart</span>
+  <span id="cart-count" class="cart-badge">0</span>
+</a>
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+<main>
+  <section class="product-section">
+    <div id="product-list" class="product-grid"></div>
+  </section>
+</main>
+
+  <div id="toast" class="toast">added to cart</div>
+  <script src="script.js"></script>
+
+</body>
+</html>
